@@ -1,0 +1,106 @@
+/* Set the background color and font styles */
+body {
+    background-color: #ffffff;
+    font-family: Product Sans;
+    background-image: url("img.jpg");
+}
+
+form {
+    border: 2px solid #000000;
+    border-radius: 4%;
+    padding: 2%;
+    width: 25%;
+    height: auto;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-family: Product Sans;
+    color: rgb(0, 0, 0);
+    background-color: black;
+    border-radius: 5%;
+    color: rgb(255, 255, 255);
+    width: 70%; 
+}
+
+div{
+    font-family: Product Sans;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-color: #000000;
+    border: 2%;
+    border-radius: 2%;
+    color: rgb(235, 49, 49);
+    width: 70%;
+}
+
+label {
+    font-family: Product Sans;
+    color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px #ffffff;
+}
+
+/* Center the login box */
+.login-box {
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the input fields and labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"]{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 1.5px solid #5547d1;
+}
+
+/* Style the login button */
+input[type="submit"] {
+    display: block;
+    width: 31%;
+    padding: 10px;
+    background-color: #5547d1;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    border-radius: 31%;
+    background-color: #5547d1;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+input[type="reset"]:hover {
+    background-color: #e90c43;
+}
+
+/* Style the error message */
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
