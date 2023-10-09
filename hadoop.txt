@@ -7,11 +7,11 @@ Mapper.py
 import sys
 import string
 for line in sys.stdin:
- words=line.split(" ")
- for word in words:
- word=word.strip("\n")
- if word:
- Print word + ":1"
+    words=line.split(" ")
+    for word in words:
+        word=word.strip("\n")
+    if word:
+        print(word + ":1")
 
 
 ----------------------------------------------
@@ -23,16 +23,16 @@ import string
 oldkey = ""
 count = 0
 for line in sys.stdin:
- words = line.split(":")
- key = words[0].strip()
- val = words[1].strip()
- if(oldkey==""):
- oldkey=key
- if(oldkey!=key):
- Print oldkey+":"+str(count)
- oldkey=key
- count=0
- count=count+1
+    words = line.split(":")
+    key = words[0].strip()
+    val = words[1].strip()
+    if(oldkey==""):
+        oldkey=key
+    if(oldkey!=key):
+        print(oldkey+":"+str(count))
+        oldkey=key
+        count=0
+    count=count+1
 
 ----------------------------------------------
 
@@ -58,6 +58,9 @@ for line in sys.stdin:
  -output /user/cloudera/output \
  -mapper /home/cloudera/mapper.py \
  -reducer /home/cloudera/reducer.py
+
+>To leave safe mode
+>hdfs dfsadmin -safemode leave
 
 > To see the result from Hadoop output folder.
 > hdfs dfs -cat /user/cloudera/output/part-00000
